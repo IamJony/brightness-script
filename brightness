@@ -13,7 +13,6 @@ increment=0.10
 function subir {  
 new_brightness=$(echo "$current_brightness + $increment" | bc)
 
-# Establecer el nuevo valor del brillo
 xrandr --output $display --brightness $new_brightness
 }
 
@@ -24,10 +23,6 @@ xrandr --output $display --brightness $new_brightness
 
 
 }
-
-
-perfil=$(echo "xrandr --output $display --brightness $current_brightness" >> .config/bspwm/brightness.txt)
-
 
 # Scripts parameters
 
