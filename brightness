@@ -32,15 +32,11 @@ perfil=$(echo "xrandr --output $display --brightness $current_brightness" >> .co
 # Scripts parameters
 
 if  [[ $1 = "--subir" ]]; then
-#sed '$d' /home/j/.config/bspwm/bspwmrc >> /home/j/.config/bspwm/bspwmrc
 	subir
-#	$perfil
-#cat /home/j/.config/bspwm/brightness.txt | sed '$!d' >> /home/j/.config/bspwm/bspwmrc
 	echo subio
 
 elif  [[ $1 = "--bajar" ]]; then
 	bajar
-#	$perfil
     echo bajo
 else
 	
