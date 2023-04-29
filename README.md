@@ -1,5 +1,5 @@
 # brightness-script
-a bash script for display VGA witch Xrandr
+turning the screen brightness using xrandr can also set the brightness of a VGA monitor
 
 ## Dependecy
 1. xrandr
